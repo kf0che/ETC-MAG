@@ -35,6 +35,8 @@ ${SCRIPTS_DIR}/install-js8spotter.sh
 
 # Install FL Suite
 
+# Install QSSTV
+
 # Customize Gnome Desktop
 ${SCRIPTS_DIR}/customize-desktop.sh
 
