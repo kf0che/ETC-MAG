@@ -1,0 +1,18 @@
+[Desktop Entry]
+Verison=1.0
+Name=JS8Spotter
+Comment=JS8Spotter Application
+Exec=python3 ~/js8spotter-114b/js8spotter.py
+Icon=/js8spotter-114b/js8spotter.ico
+Path=/js8spotter-114b
+Terminal=false
+Type=Application
+
+[Desktop Entry]
+Type=Application
+Exec=/opt/emcomm-tools/bin/et-js8call-start
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Start JS8Call
+Comment=Start JS8Call
