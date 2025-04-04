@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 #
-# Author: Clifton Jones (KD4CTJ)
-# Description:
-#   Install emcomm-tools-os-community then installs additional tools
-#
+# Author  : Steve Michael
+# Date    : 04 April 2025
+# Purpose : Install ETC then additional ham radio tools
+# 
+
 
 SCRIPT_PATH="$(readlink -f $0)"
 SCRIPTS_DIR="$(dirname ${SCRIPT_PATH})"
@@ -24,8 +25,15 @@ cd ${SCRIPTS_DIR}
 # Install WSJT-X-Improved
 ${SCRIPTS_DIR}/install-wsjtx-improved.sh
 
-# 
+# Install ARIM Suite
+${SCRIPTS_DIR}/install-arim.sh
+${SCRIPTS_DIR}/install-garim.sh
+${SCRIPTS_DIR}/install-varim.sh
 
+# Install JS8Spotter
+${SCRIPTS_DIR}/install-js8spotter.sh
+
+# Install FL Suite
 
 # Customize Gnome Desktop
 ${SCRIPTS_DIR}/customize-desktop.sh
