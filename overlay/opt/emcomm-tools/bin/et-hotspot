@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+#
+# Author: Clifton Jones
+# Description:
+#  EmComm Tools wrapper for WiFi Hotspot
+#
+
+YELLOW="\033[1;33m"
+NC="\033[0m"
+
+usage() {
+  echo "usage: $(basename $0) <command>"
+  echo "  <command>"
+  echo "    start           - Start WiFi Hotspot"
+  echo "    stop            - Stop WiFi Hotspot"
+}
+
+if [ $# -ne 1 ]; then
+  usage
+  exit 1
+fi
+
+start() {
+  if `nmcli c show | grep -qw Hotspot` ; then
+    CURR_SSID="$(nmcli c show Hotspot | grep '802-11-wireless.ssid' | sed 's/.*: *\([^ ]*\)$/\1/')"
+  else
+    CURR_SSID="HAM"
+  fi
