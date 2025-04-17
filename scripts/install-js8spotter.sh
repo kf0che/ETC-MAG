@@ -13,10 +13,10 @@ else
 fi
 
 # Variables
-WORK_DIR="$INSTALL_DIR/js8spotter-114b"
+WORK_DIR="$INSTALL_DIR/js8spotter-115b"
 DESKTOP_FILE="$INSTALL_DIR/Desktop/JS8Spotter.desktop"
-JS8_URL="https://kf7mix.com/files/js8spotter/js8spotter-114b.zip"
-ZIP_FILE="$INSTALL_DIR/js8spotter-114b.zip"
+JS8_URL="https://kf7mix.com/files/js8spotter/js8spotter-115b.zip"
+ZIP_FILE="$INSTALL_DIR/js8spotter-115b.zip"
 
 # Ensure required directories exist
 echo "Ensuring directories exist..."
@@ -60,9 +60,9 @@ cat <<EOF > "$DESKTOP_FILE"
 Version=1.0
 Name=JS8Spotter
 Comment=JS8Spotter Application
-Exec=python3 $HOME/js8spotter-114b/js8spotter.py
-Icon=$HOME/js8spotter-114b/js8spotter.ico
-Path=$HOME/js8spotter-114b
+Exec=python3 $HOME/js8spotter-115b/js8spotter.py
+Icon=$HOME/js8spotter-115b/js8spotter.ico
+Path=$HOME/js8spotter-115b
 Terminal=false
 Type=Application
 EOF
@@ -98,3 +98,4 @@ else
 fi
 
 echo "Installation complete! You can launch JS8Spotter from the desktop shortcut."
+
